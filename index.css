@@ -16,7 +16,7 @@ textarea {
   overflow: shown;
   font-family: 'Roboto Mono';
   font-size: 18px;
-  color: dark grey;
+  color: 1e1e1e;
   outline: none;
 }
 
@@ -25,6 +25,7 @@ textarea {
   font-size: 12px;
   float: left;
   margin: 8px;
+  color: 1e1e1e;
 }
 
 .wordCount {
@@ -32,6 +33,7 @@ textarea {
   font-size: 12px;
   float: right;
   margin: 8px;
+  color: 1e1e1e
 }
 
 /* Make sure the HTML and body take up the full viewport height */
