@@ -1,3 +1,4 @@
+<!-- Learn more about Bonobo at https://github.com/Noodlebox1/Bonobo !-->
 <html lang="en-US">
 
   <head>
@@ -10,12 +11,13 @@
 
   <body>
     <div class="controls">
-      <div class="spellcheckToggle"><label>
-          <input type="checkbox" id="spellcheckToggle">Spellcheck
-        </label></div>
+      <div class="spellcheckToggle"><a id="toggleLink" class="toggle-link" onclick="toggleSpellcheck()">Disable Spellcheck</a>
+
+</div>
     </div>
     <div class="wordCount"><span id="wordCount">0</span> words</div>
-    <textarea id="textArea" placeholder="Start typing..." rows="28"></textarea>
+<textarea id="textArea" spellcheck="true" placeholder="Start writing..."></textarea>
+
     </div>
     <script src="index.js"></script>
   </body>
