@@ -1,14 +1,22 @@
-const spellcheckToggle = document.getElementById('spellcheckToggle');
-const textArea = document.getElementById('textArea');
+// spellcheck code
+function toggleSpellcheck() {
+        const link = document.getElementById('toggleLink');
+        const textArea = document.getElementById('textArea');
+        const isSpellcheckEnabled = textArea.getAttribute('spellcheck') === 'true';
 
-// Set initial spellcheck state
-textArea.spellcheck = spellcheckToggle.checked;
+        // Toggle spellcheck attribute
+        if (isSpellcheckEnabled) {
+            textArea.setAttribute('spellcheck', 'false');
+            link.textContent = 'Enable Spellcheck';
+        } else {
+            textArea.setAttribute('spellcheck', 'true');
+            link.textContent = 'Disable Spellcheck';
+        }
 
-// Add event listener to toggle spellcheck
-spellcheckToggle.addEventListener('change', () => {
-  textArea.spellcheck = spellcheckToggle.checked;
-});
-
+        // Toggle link styling
+        link.classList.toggle('active', isSpellcheckEnabled);
+    }
+// word count code
 const textarea = document.getElementById('textArea');
 const wordCountElement = document.getElementById('wordCount');
 
