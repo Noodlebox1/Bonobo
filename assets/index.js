@@ -29,3 +29,17 @@ function updateWordCount() {
 textarea.addEventListener('input', updateWordCount);
 // Initialize word count on page load
 updateWordCount();
+
+// Download button
+document.getElementById('downloadBtn').addEventListener('click', function() {
+        const text = document.getElementById('textArea').value;
+        const blob = new Blob([text], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'page.txt';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
