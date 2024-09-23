@@ -1,5 +1,10 @@
+html,
 body {
   background-color: #f9eecf;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 textarea {
@@ -48,14 +53,6 @@ textarea {
   color: #1e1e1e
 }
 
-/* Make sure the HTML and body take up the full viewport height */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 /* Style the container to take up full height of the viewport */
 .container {
   height: 100vh;
@@ -63,8 +60,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-textarea {
- 
 }
