@@ -1,5 +1,10 @@
+html,
 body {
   background-color: #f9eecf;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 textarea {
@@ -18,6 +23,9 @@ textarea {
   font-size: 18px;
   color: #1e1e1e;
   outline: none;
+  width: 60%;
+  height: 98%;
+  resize: none;
 }
 
 .spellcheckToggle {
@@ -26,6 +34,15 @@ textarea {
   float: left;
   margin: 8px;
   color: #1e1e1e;
+  cursor: pointer;
+}
+.downloadBtn {
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+  float: left;
+  margin: 8px;
+  color: #1e1e1e;
+  cursor: pointer;
 }
 
 .wordCount {
@@ -36,14 +53,6 @@ textarea {
   color: #1e1e1e
 }
 
-/* Make sure the HTML and body take up the full viewport height */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 /* Style the container to take up full height of the viewport */
 .container {
   height: 100vh;
@@ -51,14 +60,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Style the textarea to fill the container */
-textarea {
-  width: 60%;
-  /* Adjust width as needed */
-  height: 80%;
-  /* Adjust height as needed */
-  resize: none;
-  /* Disable manual resizing */
 }
