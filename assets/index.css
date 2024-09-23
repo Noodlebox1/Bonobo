@@ -26,6 +26,15 @@ textarea {
   float: left;
   margin: 8px;
   color: #1e1e1e;
+  cursor: pointer;
+}
+.downloadBtn {
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+  float: left;
+  margin: 8px;
+  color: #1e1e1e;
+  cursor: pointer;
 }
 
 .wordCount {
