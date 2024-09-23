@@ -18,6 +18,9 @@ textarea {
   font-size: 18px;
   color: #1e1e1e;
   outline: none;
+  width: 60%;
+  height: 98%;
+  resize: none;
 }
 
 .spellcheckToggle {
@@ -62,12 +65,6 @@ body {
   align-items: center;
 }
 
-/* Style the textarea to fill the container */
 textarea {
-  width: 60%;
-  /* Adjust width as needed */
-  height: 80%;
-  /* Adjust height as needed */
-  resize: none;
-  /* Disable manual resizing */
+ 
 }
