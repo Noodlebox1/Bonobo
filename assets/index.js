@@ -7,10 +7,8 @@ function toggleSpellcheck() {
         // Toggle spellcheck attribute
         if (isSpellcheckEnabled) {
             textArea.setAttribute('spellcheck', 'false');
-            link.textContent = 'Enable Spellcheck';
         } else {
             textArea.setAttribute('spellcheck', 'true');
-            link.textContent = 'Disable Spellcheck';
         }
 
         // Toggle link styling
@@ -43,3 +41,4 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     });
+
