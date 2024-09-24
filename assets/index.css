@@ -11,6 +11,7 @@ textarea {
   background-color: #f9eecf;
   resize: none;
   width: 40%;
+  max-wdith: 70ch;
   padding: 16px 16px;
   margin: 4px 0;
   box-sizing: border-box;
