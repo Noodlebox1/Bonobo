@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #f9eecf;
+  background-color: #f5eddd;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 textarea {
-  background-color: #f9eecf;
+  background-color: #f5eddd;
   resize: none;
   width: 40%;
   max-width: 70ch;
