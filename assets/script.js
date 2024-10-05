@@ -41,4 +41,3 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     });
-
